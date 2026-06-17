@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "KqhTIQRwoX8=",
+  "success": true,
+  "projectFilePath": "D:\\Ahmed\\Encrypt_Decrypt_UBL\\Encrypt_Decrypt_UBL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MG_New02\\.nuget\\packages\\konscious.security.cryptography.argon2\\1.3.1\\konscious.security.cryptography.argon2.1.3.1.nupkg.sha512",
+    "C:\\Users\\MG_New02\\.nuget\\packages\\konscious.security.cryptography.blake2\\1.1.1\\konscious.security.cryptography.blake2.1.1.1.nupkg.sha512",
+    "C:\\Users\\MG_New02\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}

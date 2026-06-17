@@ -1,0 +1,52 @@
+
+select * from tbl_usertypes where id = 4 -- Vendor 
+
+SELECT * FROM TBL_rolesmaster WHERE RoleID in (1,1017)
+
+SELECT * FROM TBL_formsmaster WHERE FormID = 1045 -- InviteVendor
+
+SELECT * FROM TBL_rolesmapping WHERE FormID in (1045) -- InviteVendor
+
+SELECT * FROM TBL_usersmaster WHERE UserID in (43) -- Vendor 
+
+select * from Tbl_Categories 
+select * from Tbl_SubCategories 
+
+select * from tbl_VendorInvitationTokens
+select * from Tbl_OTP_Verification
+
+select * from tbl_Vendors
+select * from Tbl_VendorSubCategories
+
+
+
+
+--  Tables
+
+--Tbl_OTP_Verification
+--Tbl_SubCategories
+--Tbl_Categories
+--tbl_VendorInvitationTokens
+--Tbl_VendorSubCategories
+--Tbl_Vendors
+
+
+
+--  Store Procedure
+
+--sp_get_vendor_details
+--sp_update_vendor_status
+--sp_select_vendors
+--sp_resend_vendor_otp
+--sp_CheckVendorEmailExists
+--sp_verify_otp
+--sp_save_temp_registration
+--sp_CheckVendorExistence
+--sp_FinalizeVendorRegistration
+--SP_Dropdown_GetSubCategories
+--SP_Dropdown_GetCategories
+--sp_MarkVendorTokenUsed
+--sp_ValidateVendorToken
+--sp_UpdateVendorInvitationStatus
+--sp_SaveVendorInvitationToken
+

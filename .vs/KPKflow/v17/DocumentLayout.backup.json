@@ -1,0 +1,237 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Ahmed\\KPKflow\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{204753A0-9F34-130F-27AA-0D2041CB8B12}|KPKflowApp\\KPKflowApp.csproj|d:\\ahmed\\kpkflow\\kpkflowapp\\views\\vendorregister\\vendorregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{204753A0-9F34-130F-27AA-0D2041CB8B12}|KPKflowApp\\KPKflowApp.csproj|solutionrelative:kpkflowapp\\views\\vendorregister\\vendorregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{204753A0-9F34-130F-27AA-0D2041CB8B12}|KPKflowApp\\KPKflowApp.csproj|d:\\ahmed\\kpkflow\\kpkflowapp\\wwwroot\\public\\js\\custom-js\\settings\\vendorregister.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{204753A0-9F34-130F-27AA-0D2041CB8B12}|KPKflowApp\\KPKflowApp.csproj|solutionrelative:kpkflowapp\\wwwroot\\public\\js\\custom-js\\settings\\vendorregister.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{204753A0-9F34-130F-27AA-0D2041CB8B12}|KPKflowApp\\KPKflowApp.csproj|d:\\ahmed\\kpkflow\\kpkflowapp\\views\\quotation\\rfqs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{204753A0-9F34-130F-27AA-0D2041CB8B12}|KPKflowApp\\KPKflowApp.csproj|solutionrelative:kpkflowapp\\views\\quotation\\rfqs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{204753A0-9F34-130F-27AA-0D2041CB8B12}|KPKflowApp\\KPKflowApp.csproj|d:\\ahmed\\kpkflow\\kpkflowapp\\wwwroot\\public\\js\\custom-js\\purchaserequest\\initiate.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{204753A0-9F34-130F-27AA-0D2041CB8B12}|KPKflowApp\\KPKflowApp.csproj|solutionrelative:kpkflowapp\\wwwroot\\public\\js\\custom-js\\purchaserequest\\initiate.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA3CCBC4-EF41-648D-AEED-C262FD2DDFCB}|KPKflowApi\\KPKflowApi.csproj|d:\\ahmed\\kpkflow\\kpkflowapi\\controllers\\purchaserequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA3CCBC4-EF41-648D-AEED-C262FD2DDFCB}|KPKflowApi\\KPKflowApi.csproj|solutionrelative:kpkflowapi\\controllers\\purchaserequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{204753A0-9F34-130F-27AA-0D2041CB8B12}|KPKflowApp\\KPKflowApp.csproj|d:\\ahmed\\kpkflow\\kpkflowapp\\wwwroot\\public\\css\\custom-css\\purchaserequest\\bankratecomparison.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{204753A0-9F34-130F-27AA-0D2041CB8B12}|KPKflowApp\\KPKflowApp.csproj|solutionrelative:kpkflowapp\\wwwroot\\public\\css\\custom-css\\purchaserequest\\bankratecomparison.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{204753A0-9F34-130F-27AA-0D2041CB8B12}|KPKflowApp\\KPKflowApp.csproj|d:\\ahmed\\kpkflow\\kpkflowapp\\wwwroot\\public\\js\\custom-js\\purchaserequest\\bankratecomparison.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{204753A0-9F34-130F-27AA-0D2041CB8B12}|KPKflowApp\\KPKflowApp.csproj|solutionrelative:kpkflowapp\\wwwroot\\public\\js\\custom-js\\purchaserequest\\bankratecomparison.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{204753A0-9F34-130F-27AA-0D2041CB8B12}|KPKflowApp\\KPKflowApp.csproj|d:\\ahmed\\kpkflow\\kpkflowapp\\views\\purchaserequest\\bankratecomparison.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{204753A0-9F34-130F-27AA-0D2041CB8B12}|KPKflowApp\\KPKflowApp.csproj|solutionrelative:kpkflowapp\\views\\purchaserequest\\bankratecomparison.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{204753A0-9F34-130F-27AA-0D2041CB8B12}|KPKflowApp\\KPKflowApp.csproj|d:\\ahmed\\kpkflow\\kpkflowapp\\wwwroot\\public\\js\\custom-js\\layout\\_layout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{204753A0-9F34-130F-27AA-0D2041CB8B12}|KPKflowApp\\KPKflowApp.csproj|solutionrelative:kpkflowapp\\wwwroot\\public\\js\\custom-js\\layout\\_layout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{204753A0-9F34-130F-27AA-0D2041CB8B12}|KPKflowApp\\KPKflowApp.csproj|d:\\ahmed\\kpkflow\\kpkflowapp\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{204753A0-9F34-130F-27AA-0D2041CB8B12}|KPKflowApp\\KPKflowApp.csproj|solutionrelative:kpkflowapp\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{204753A0-9F34-130F-27AA-0D2041CB8B12}|KPKflowApp\\KPKflowApp.csproj|d:\\ahmed\\kpkflow\\kpkflowapp\\controllers\\purchaserequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{204753A0-9F34-130F-27AA-0D2041CB8B12}|KPKflowApp\\KPKflowApp.csproj|solutionrelative:kpkflowapp\\controllers\\purchaserequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA3CCBC4-EF41-648D-AEED-C262FD2DDFCB}|KPKflowApi\\KPKflowApi.csproj|d:\\ahmed\\kpkflow\\kpkflowapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CA3CCBC4-EF41-648D-AEED-C262FD2DDFCB}|KPKflowApi\\KPKflowApi.csproj|solutionrelative:kpkflowapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA3CCBC4-EF41-648D-AEED-C262FD2DDFCB}|KPKflowApi\\KPKflowApi.csproj|d:\\ahmed\\kpkflow\\kpkflowapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CA3CCBC4-EF41-648D-AEED-C262FD2DDFCB}|KPKflowApi\\KPKflowApi.csproj|solutionrelative:kpkflowapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VendorRegister.js",
+              "DocumentMoniker": "D:\\Ahmed\\KPKflow\\KPKflowApp\\wwwroot\\Public\\js\\custom-js\\Settings\\VendorRegister.js",
+              "RelativeDocumentMoniker": "KPKflowApp\\wwwroot\\Public\\js\\custom-js\\Settings\\VendorRegister.js",
+              "ToolTip": "D:\\Ahmed\\KPKflow\\KPKflowApp\\wwwroot\\Public\\js\\custom-js\\Settings\\VendorRegister.js",
+              "RelativeToolTip": "KPKflowApp\\wwwroot\\Public\\js\\custom-js\\Settings\\VendorRegister.js",
+              "ViewState": "AgIAAGsAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-06-10T06:33:19.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VendorRegister.cshtml",
+              "DocumentMoniker": "D:\\Ahmed\\KPKflow\\KPKflowApp\\Views\\VendorRegister\\VendorRegister.cshtml",
+              "RelativeDocumentMoniker": "KPKflowApp\\Views\\VendorRegister\\VendorRegister.cshtml",
+              "ToolTip": "D:\\Ahmed\\KPKflow\\KPKflowApp\\Views\\VendorRegister\\VendorRegister.cshtml",
+              "RelativeToolTip": "KPKflowApp\\Views\\VendorRegister\\VendorRegister.cshtml",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAUwHoAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-10T06:32:27.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RFQs.cshtml",
+              "DocumentMoniker": "D:\\Ahmed\\KPKflow\\KPKflowApp\\Views\\Quotation\\RFQs.cshtml",
+              "RelativeDocumentMoniker": "KPKflowApp\\Views\\Quotation\\RFQs.cshtml",
+              "ToolTip": "D:\\Ahmed\\KPKflow\\KPKflowApp\\Views\\Quotation\\RFQs.cshtml",
+              "RelativeToolTip": "KPKflowApp\\Views\\Quotation\\RFQs.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-10T06:32:17.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.js",
+              "DocumentMoniker": "D:\\Ahmed\\KPKflow\\KPKflowApp\\wwwroot\\Public\\js\\custom-js\\Layout\\_Layout.js",
+              "RelativeDocumentMoniker": "KPKflowApp\\wwwroot\\Public\\js\\custom-js\\Layout\\_Layout.js",
+              "ToolTip": "D:\\Ahmed\\KPKflow\\KPKflowApp\\wwwroot\\Public\\js\\custom-js\\Layout\\_Layout.js",
+              "RelativeToolTip": "KPKflowApp\\wwwroot\\Public\\js\\custom-js\\Layout\\_Layout.js",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-06-09T09:35:47.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Initiate.js",
+              "DocumentMoniker": "D:\\Ahmed\\KPKflow\\KPKflowApp\\wwwroot\\Public\\js\\custom-js\\PurchaseRequest\\Initiate.js",
+              "RelativeDocumentMoniker": "KPKflowApp\\wwwroot\\Public\\js\\custom-js\\PurchaseRequest\\Initiate.js",
+              "ToolTip": "D:\\Ahmed\\KPKflow\\KPKflowApp\\wwwroot\\Public\\js\\custom-js\\PurchaseRequest\\Initiate.js",
+              "RelativeToolTip": "KPKflowApp\\wwwroot\\Public\\js\\custom-js\\PurchaseRequest\\Initiate.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-06-09T09:35:24.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PurchaseRequestController.cs",
+              "DocumentMoniker": "D:\\Ahmed\\KPKflow\\KPKflowApp\\Controllers\\PurchaseRequestController.cs",
+              "RelativeDocumentMoniker": "KPKflowApp\\Controllers\\PurchaseRequestController.cs",
+              "ToolTip": "D:\\Ahmed\\KPKflow\\KPKflowApp\\Controllers\\PurchaseRequestController.cs",
+              "RelativeToolTip": "KPKflowApp\\Controllers\\PurchaseRequestController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T08:03:35.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Ahmed\\KPKflow\\KPKflowApi\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "KPKflowApi\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Ahmed\\KPKflow\\KPKflowApi\\Properties\\launchSettings.json",
+              "RelativeToolTip": "KPKflowApi\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-09T07:56:50.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Ahmed\\KPKflow\\KPKflowApi\\appsettings.json",
+              "RelativeDocumentMoniker": "KPKflowApi\\appsettings.json",
+              "ToolTip": "D:\\Ahmed\\KPKflow\\KPKflowApi\\appsettings.json",
+              "RelativeToolTip": "KPKflowApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-09T07:56:45.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PurchaseRequestController.cs",
+              "DocumentMoniker": "D:\\Ahmed\\KPKflow\\KPKflowApi\\Controllers\\PurchaseRequestController.cs",
+              "RelativeDocumentMoniker": "KPKflowApi\\Controllers\\PurchaseRequestController.cs",
+              "ToolTip": "D:\\Ahmed\\KPKflow\\KPKflowApi\\Controllers\\PurchaseRequestController.cs",
+              "RelativeToolTip": "KPKflowApi\\Controllers\\PurchaseRequestController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAO8CAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T07:17:46.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BankRateComparison.js",
+              "DocumentMoniker": "D:\\Ahmed\\KPKflow\\KPKflowApp\\wwwroot\\Public\\js\\custom-js\\PurchaseRequest\\BankRateComparison.js",
+              "RelativeDocumentMoniker": "KPKflowApp\\wwwroot\\Public\\js\\custom-js\\PurchaseRequest\\BankRateComparison.js",
+              "ToolTip": "D:\\Ahmed\\KPKflow\\KPKflowApp\\wwwroot\\Public\\js\\custom-js\\PurchaseRequest\\BankRateComparison.js",
+              "RelativeToolTip": "KPKflowApp\\wwwroot\\Public\\js\\custom-js\\PurchaseRequest\\BankRateComparison.js",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowFoAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-06-09T07:06:52.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BankRateComparison.css",
+              "DocumentMoniker": "D:\\Ahmed\\KPKflow\\KPKflowApp\\wwwroot\\Public\\css\\custom-css\\PurchaseRequest\\BankRateComparison.css",
+              "RelativeDocumentMoniker": "KPKflowApp\\wwwroot\\Public\\css\\custom-css\\PurchaseRequest\\BankRateComparison.css",
+              "ToolTip": "D:\\Ahmed\\KPKflow\\KPKflowApp\\wwwroot\\Public\\css\\custom-css\\PurchaseRequest\\BankRateComparison.css",
+              "RelativeToolTip": "KPKflowApp\\wwwroot\\Public\\css\\custom-css\\PurchaseRequest\\BankRateComparison.css",
+              "ViewState": "AgIAACkAAAAAAAAAAAAqwEMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-06-09T06:49:06.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BankRateComparison.cshtml",
+              "DocumentMoniker": "D:\\Ahmed\\KPKflow\\KPKflowApp\\Views\\PurchaseRequest\\BankRateComparison.cshtml",
+              "RelativeDocumentMoniker": "KPKflowApp\\Views\\PurchaseRequest\\BankRateComparison.cshtml",
+              "ToolTip": "D:\\Ahmed\\KPKflow\\KPKflowApp\\Views\\PurchaseRequest\\BankRateComparison.cshtml",
+              "RelativeToolTip": "KPKflowApp\\Views\\PurchaseRequest\\BankRateComparison.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAC0AAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-09T06:41:50.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "D:\\Ahmed\\KPKflow\\KPKflowApp\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "KPKflowApp\\Controllers\\BaseController.cs",
+              "ToolTip": "D:\\Ahmed\\KPKflow\\KPKflowApp\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "KPKflowApp\\Controllers\\BaseController.cs",
+              "ViewState": "AgIAAPQDAAAAAAAAAAAAwLYEAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T07:48:48.891Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

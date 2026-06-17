@@ -1,0 +1,112 @@
+﻿@inject KPKflowApp.Models.Session.Sessions Sessions_
+@{
+    ViewBag.Title = "Bank Rate Comparison";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section TopCss
+{
+    <link href="~/Public/css/custom-css/Workflow/HistoryCards.css" rel="stylesheet" />
+    <link href="~/public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/public/vendor/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="~/public/vendor/fontawesome/css/all.min.css" rel="stylesheet" />
+    <link href="~/public/css/custom-css/PurchaseRequest/BankRateComparison.css" rel="stylesheet" />
+}
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="card stretch">
+            <div class="card-header p-0">
+               
+            </div>
+            <div class="card-body customheight-100">
+               <div class="row">
+                   <div class="col-md-6">
+                       <div class="form-group">
+                           <label class="form-label">Fund Name</label>
+                           <select class="form-control" id="ddlfundname">
+
+                           </select>
+                       </div>
+                   </div>
+               </div>
+            </div>
+        </div>
+        <div class="card stretch">
+            <div class="card-header p-0">
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Date</label>
+                                <input type="text" name="date" class="form-control" value="" id="date" disabled/>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="table-responsive">
+                            <table class="table table-custom m-0">
+                                <thead>
+                                    <tr>
+                                        <th colspan="6" class="bg-kp-green main-header py-3 text-white">
+                                            GOVERNMENT OF KHYBER PAKHTUNKHWA — FINANCE DEPARTMENT
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="6" class="bg-kp-green sub-header py-2">
+                                            Comparative Analysis of Bank Rates
+                                        </th>
+                                    </tr>
+                                    <tr class="bg-kp-green align-middle">
+                                        <th rowspan="2" class="col-sno">S.No.</th>
+                                        <th rowspan="2" class="col-bank">Bank Name</th>
+                                        <th rowspan="2" class="col-amount">Offered Amount<br>(PKR in millions)</th>
+                                        <th colspan="3">Rate (% p.a.)</th>
+                                    </tr>
+                                    <tr class="bg-kp-green align-middle">
+                                        <th class="col-tenor">3-Month Tenor</th>
+                                        <th class="col-tenor">6-Month Tenor</th>
+                                        <th class="col-tenor">12-Month Tenor</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="bankratestbody">
+                                    
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="3" class="bg-kp-orange text-uppercase fw-bold text-center py-2">
+                                            BEST OFFERED RATE (Lowest)
+                                        </td>
+                                        <td class="bg-kp-light-green fw-bold" id="best-3m">0.00%</td>
+                                        <td class="bg-kp-light-green fw-bold" id="best-6m">0.00%</td>
+                                        <td class="bg-kp-light-green fw-bold" id="best-12m">0.00%</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="3" class="bg-kp-blue text-uppercase fw-bold text-center py-2">
+                                            HIGHEST OFFERED RATE
+                                        </td>
+                                        <td class="bg-kp-light-blue fw-bold" id="highest-3m">0.00%</td>
+                                        <td class="bg-kp-light-blue fw-bold" id="highest-6m">0.00%</td>
+                                        <td class="bg-kp-light-blue fw-bold" id="highest-12m">0.00%</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section BottomJS {
+    <script src="~/Public/vendor/leaderline/leaderline.js"></script>
+    <script src="~/Public/js/custom-js/Workflow/WorkflowManager.js"></script>
+    <script src="~/public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Public/js/custom-js/PurchaseRequest/BankRateComparison.js"></script>
+}

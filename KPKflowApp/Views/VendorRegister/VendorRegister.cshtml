@@ -1,0 +1,254 @@
+@{
+    ViewBag.Title = "BankRegister";
+    Layout = null;    
+}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Register | Bank</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/image/favicon.png" type="image/x-icon">
+        <link href="~/public/css/custom-css/settings/vendorregister.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="~/Public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="~/public/vendor/select2/select2.min.css" rel="stylesheet" />
+        <link href="~/Public/vendor/sweetalert/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+        <link href="~/public/vendor/fontawesome/css/all.min.css" rel="stylesheet" />
+    </head>
+
+    <body>
+
+    <div class="main py-5">
+        <div class="container">
+            <div class="row g-5">
+                <aside class="col-lg-3">
+                    <div class="steps-container sticky-top" style="top: 30px;">
+                        <h6 class="text-uppercase fw-800 small text-dark mb-5" style="letter-spacing: 3px;">Registration</h6>
+                        <div class="timeline">
+                            <div class="timeline-step">
+                                <div class="step-icon bg-success text-white rounded-circle d-flex align-items-center justify-content-center shadow-sm">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div>
+                                    <div class="text-success fw-bold small">PHASE 01</div>
+                                    <div class="fw-600 text-muted" style="font-size: 0.85rem;">Invitation Accepted</div>
+                                </div>
+                            </div>
+
+                            <div id="step-phase2" class="timeline-step step-active">
+                                <div class="step-icon bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold">2</div>
+                                <div>
+                                    <div class="text-primary fw-bold small">PHASE 02</div>
+                                    <div class="fw-800 text-muted-title" style="font-size: 0.95rem;">Bank Profile</div>
+                                </div>
+                            </div>
+
+                            <div id="step-phase3" class="timeline-step">
+                                <div class="step-icon bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold">3</div>
+                                <div>
+                                    <div class="text-muted fw-bold small phase-label">PHASE 03</div>
+                                    <div class="fw-600 text-muted phase-text" style="font-size: 0.85rem;">Verification</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <div class="col-lg-9">
+                    <div class="enrollment-header p-4 mb-5 d-flex justify-content-between align-items-center shadow-lg bg-primary text-white rounded-4">
+                        <div>
+                            <h2 class="fw-800 mb-2">Bank Enrollment</h2>
+                            <p class="mb-0 opacity-75">Complete your official business profile to start collaborating with us.</p>
+                        </div>
+                        <div class="d-none d-md-block">
+                            <i class="fa-solid fa-building-shield fs-1"></i>
+                        </div>
+                    </div>
+
+                    <form id="vendorForm" method="post" autocomplete="off">
+                        <div class="form-section-card border rounded-4 mb-4 overflow-hidden shadow-sm bg-white">
+                            <div class="header-gradient p-3 bg-light border-bottom d-flex align-items-center">
+                                <i class="fa-solid fa-hotel me-3"></i>
+                                <h5 class="mb-0 fw-800 text-dark">Bank Information</h5>
+                            </div>
+                            <div class="card-body p-4 p-md-5">
+                                <input type="hidden" id="InvitationToken" name="InvitationToken" value="">
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold">Legal Bank Name</label>
+                                        <input type="text" class="form-control" name="BusinessName" id="BusinessName" placeholder="e.g. ABC Bank Ltd">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold">City</label>
+                                        <input type="text" class="form-control" name="City" id="City" placeholder="Karachi">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold">Postal Code</label>
+                                        <input type="text" class="form-control" name="PostalCode" id="PostalCode" placeholder="75500">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold">Office Address</label>
+                                        <input type="text" class="form-control" name="Address" id="Address" placeholder="Complete physical address...">
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold">NTN Number</label>
+                                        <input type="text" class="form-control" name="NTN" id="NTN" placeholder="0000000-0">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold">STRN Number</label>
+                                        <input type="text" class="form-control" name="STRN" id="STRN" placeholder="00-00-0000-000-00">
+                                    </div>
+
+                                    <div class="col-md-6 d-none">
+                                        <label class="form-label fw-bold">Category</label>
+                                        <select class="form-select select2-single" name="Category" id="categorySelect">
+                                            <option value="1" data-select2-id="1" selected>Bank</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 d-none">
+                                        <label class="form-label fw-bold">Sub-Categories</label>
+                                        <select class="form-select select2-multiple" name="SubCategories[]" id="subCategorySelect" multiple="multiple">
+                                            <option value="1" data-select2-id="1" selected>Bank</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12 mt-2"> <hr class="mb-2"> <h6 class="mb-0 text-dark">Document Uploads</h6> </div>
+
+                                    <div class="col-md-4">
+                                        <label class="form-label fw-bold mb-1">Tax Uploader (NTN)</label>
+                                        <input type="file" class="form-control" name="TaxDocument" id="TaxDocument" accept=".pdf, .png, .jpg, .jpeg">
+                                        <small class="text-muted">Allowed: PDF, PNG, JPG</small>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <label class="form-label fw-bold mb-1">Company Profile (STRN)</label>
+                                        <input type="file" class="form-control" name="CompanyProfile" id="CompanyProfile" accept=".pdf, .doc, .docx">
+                                        <small class="text-muted">Allowed: PDF or DOCX only</small>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <label class="form-label fw-bold mb-1">Additional Docs</label>
+                                        <input type="file" class="form-control" name="AdditionalDocs" id="AdditionalDocs">
+                                        <small class="text-muted">Any supporting documents</small>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section-card border rounded-4 mb-4 overflow-hidden shadow-sm bg-white">
+                            <div class="header-gradient p-3 bg-light border-bottom d-flex align-items-center">
+                                <i class="fa-solid fa-user-gear me-3"></i>
+                                <h5 class="mb-0 fw-800 text-dark">Authorized Representative</h5>
+                            </div>
+                            <div class="card-body p-4 p-md-5">
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <label class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" name="User.UserName" placeholder="e.g. John Doe">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Login Name</label>
+                                        <input type="text" class="form-control" name="User.LoginName" placeholder="e.g. j.doe">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Official Email</label>
+                                        <input type="email" class="form-control" name="User.UserEmail" value="@ViewBag.UserEmail" placeholder="name@company.com">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Mobile Number</label>
+                                        <input type="tel" class="form-control" name="User.MobileNumber" placeholder="03XXXXXXXXX">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Designation</label>
+                                        <input type="text" class="form-control" name="User.Designation" placeholder="e.g. Manager">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Department</label>
+                                        <input type="text" class="form-control" name="User.Department" placeholder="e.g. IT">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="glass-footer p-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 shadow-sm bg-white border rounded-4">
+                            <div class="form-check custom-checkbox">
+                                <input class="form-check-input" type="checkbox" id="terms" name="terms">
+                                <label class="form-check-label fw-600 text-muted small" for="terms">
+                                    I verify that these business details are correct and understand they are subject to verification.
+                                </label>
+                            </div>
+                            <button type="submit" id="Submit" class="btn btn-primary px-5 py-2 fw-bold">
+                                Submit <i class="fa-solid fa-paper-plane ms-2"></i>
+                            </button>
+                        </div>
+                    </form>
+
+                    <div id="otpSection" style="display:none;" class="card otp-card border-0 shadow-lg">
+                        <div class="card-body p-4 p-md-5 text-center">
+                            <div class="mb-4">
+                                <div class="icon-circle-custom mb-3">
+                                    <i class="fas fa-shield-alt fa-2x text-primary"></i>
+                                </div>
+                                <h3 class="fw-bold h4">Verification Required</h3>
+                                <p class="text-muted small px-lg-5">We've sent unique verification codes to your registered email. Please enter them below.</p>
+                            </div>
+
+                            <div class="row g-4 mb-4 justify-content-center">
+                                <div class="col-sm-12 d-none">
+                                    <label class="otp-label">Mobile Code</label>
+                                    <input type="text" id="MobileOTP" class="form-control otp-input-modern"
+                                           placeholder="0000" value="1234" maxlength="4" autocomplete="off">
+                                </div>
+                                <div class="col-sm-12">
+                                    <label class="otp-label">Email Code</label>
+                                    <input type="text" id="EmailOTP" class="form-control otp-input-modern"
+                                           placeholder="000000" maxlength="6" autocomplete="off">
+                                </div>
+                            </div>
+
+                            <div id="timerContainer" class="mb-4 small fw-medium">
+                                <span class="text-muted">Code expires in: </span>
+                                <span id="otpTimer" class="text-primary-emphasis">02:00</span>
+                            </div>
+
+                            <div class="d-grid gap-2 d-sm-block mt-4">
+                                <button type="button" id="VerifyAndRegister" class="btn-premium-glow">
+                                    <span class="btn-content">
+                                        <span class="btn-text">Verify & Submit</span>
+                                        <span class="icon-wrapper">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                    </span>
+                                    <div class="glow-overlay"></div>
+                                </button>
+                            </div>
+
+                            <div id="resendContainer" style="display:none;" class="mt-4 pt-3 border-top animate__animated animate__fadeIn">
+                                <p class="small text-muted mb-0">Didn't receive any code?</p>
+                                <button type="button" class="btn btn-link btn-sm text-primary fw-bold text-decoration-none" id="ResendOTP">
+                                    <i class="fas fa-redo-alt me-1"></i> Resend New OTP
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/Public/vendor/jquery/jquery-3.7.1.min.js"></script>
+    <script src="~/Public/vendor/jquery/jquery.validate.min.js"></script>
+    <script src="~/public/js/classes/APICALL.js"></script>
+    <script src="~/public/js/classes/UTILITY.js"></script>
+    <script src="~/Public/js/custom-js/Layout/_Layout.js"></script>
+    <script src="~/public/vendor/select2/select2.min.js"></script>
+    <script src="~/Public/vendor/sweetalert/sweetalert2.all.min.js"></script>
+    <script src="~/public/js/custom-js/settings/vendorregister.js"></script>
+    </body>
+
+</html>

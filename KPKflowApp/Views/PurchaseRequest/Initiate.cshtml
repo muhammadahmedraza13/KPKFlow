@@ -1,0 +1,76 @@
+﻿@inject KPKflowApp.Models.Session.Sessions Sessions_
+@{
+    ViewBag.Title = "Initiate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section TopCss
+{
+    <link href="~/Public/css/custom-css/Workflow/HistoryCards.css" rel="stylesheet" />
+    <link href="~/public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/public/vendor/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="~/public/vendor/fontawesome/css/all.min.css" rel="stylesheet" />
+    <link href="~/public/vendor/boxicons/css/boxicons.css" rel="stylesheet" />
+    <link href="~/public/vendor/select2/select2.min.css" rel="stylesheet" />
+    <link href="~/public/css/custom-css/PurchaseRequest/initiate.css" rel="stylesheet" />
+}
+
+@{
+    var claims = Context.User.Claims;
+    var uniqueKey = claims.FirstOrDefault(c => c.Type == "Guid")?.Value
+                    ?? throw new InvalidOperationException("User claims missing Guid");
+    var userId = claims.FirstOrDefault(c => c.Type == "UserID")?.Value
+                 ?? throw new InvalidOperationException("User claims missing UserID");
+    var session = Sessions_.GetSession(uniqueKey, userId);
+    var roles = session?.rolesMapping ?? new List<KPKflowApp.Models.Authentication.RolesMapping>();
+    string controller = Context.Request.RouteValues["controller"]?.ToString() ?? "";
+    string action = Context.Request.RouteValues["action"]?.ToString() ?? "";
+    var form = roles.FirstOrDefault(r => r.FormName == $"{controller}/{action}");
+    bool _allowinsert = form?.AllowInsert ?? false;
+    bool _allowupdate = form?.AllowUpdate ?? false;
+    bool _allowdelete = form?.AllowDelete ?? false;
+    string wfCode = ViewBag.wfCode?.ToString() ?? "";
+    string defaultform = session?.userInfo?.DefaultFormName ?? "";
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="card stretch stretch-full">
+            <div class="card-header p-0">
+            </div>
+            <div class="card-body">
+                <div id="workflowDiv">
+                    <div class="div-loader">
+                        <div class="loader-wrapper d-none">
+                            <span class="loader"></span>
+                        </div>
+                        <input type="hidden" id="defaultform" value="@defaultform" />
+
+                        <form id="intiateform" name="intiateform" method="post" action="">
+                            <input type="hidden" value="@wfCode" id="workflow" name="workflow" />
+                            <div class="row" id="appendForm">
+                            </div>
+                            @if (_allowinsert)
+                            {
+                                <div class="row ">
+                                    <div class="d-flex justify-content-end flex-wrap" id="actionId"></div>
+                                </div>
+                            }
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section BottomJS {
+    <script src="~/Public/vendor/leaderline/leaderline.js"></script>
+    <script src="~/Public/js/custom-js/Workflow/WorkflowManager.js"></script>
+    <script src="~/public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/public/vendor/select2/select2.min.js"></script>
+    <script src="~/Public/js/custom-js/PurchaseRequest/Initiate.js"></script>
+@*     <script src="~/public/js/pdf.min.js"></script>
+    <script src="~/public/js/pdf.worker.min.js"></script> *@
+}

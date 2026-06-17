@@ -1,0 +1,21 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "KPKflowConsole\\KPKflowConsole.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "KPKflowApi\\KPKflowApi.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      },
+      {
+        "Path": "KPKflowApp\\KPKflowApp.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      }
+    ]
+  }
+]

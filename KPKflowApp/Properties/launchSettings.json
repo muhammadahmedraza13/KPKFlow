@@ -1,0 +1,53 @@
+{
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "http://localhost:5249"
+    },
+    "https": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "AM_SALT_SIZE": "32",
+        "AM_KEY_SIZE": "64",
+        "AM_ITERATIONS": "15000",
+        "AM_ENCRYPTION_KEY": "M@Kv2$PBn!992!2-2024",
+        "AM_CHAR_SET": "ThI$I$R@nD0MKeYGeNeR@T0RbY$@L@R",
+        "AM_FOLDERPATH": "D:\\Websites\\MUFA\\APP",
+        "AM_CONNECT_SRC": "https://localhost:7163 wss://localhost:7163/signalr",
+        "AM_SERVICE_URL": "https://localhost:7163/api/",
+        "AM_TARGET_API": "https://localhost:7163",
+        "AM_TARGET_APP": "https://localhost:7201",
+        "AM_DATABASE": "pJE4DdsZlIHnj8BF.txXOxkP75NEqvDGGI4nWFPUZwnBHV6KVkO3ZrG3HXapFiAu/2g6Pmm1QqS7msaTRoxvMl47msHozgHQpHTXrNJcAlH25bJasCV5QJo0bP5VvW8G2f8e+cnxYKp6BzW0rBXLf.rfgvR6mwuykMY9DmTNyLYQ==",
+        "AM_JWT_KEY": "$M!G-SF12345%,dns1.namingserver1.com",
+        "AM_JWT_ISSUER": "https://contabo.net/",
+        "AM_JWT_AUDIENCE": "contabo.net",
+        "AM_VIEWURL": "https://localhost:7201",
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "xpt956wxp": "MAKV2SPBNI99212"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:7201;http://localhost:5249"
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:45809",
+      "sslPort": 44315
+    }
+  }
+}

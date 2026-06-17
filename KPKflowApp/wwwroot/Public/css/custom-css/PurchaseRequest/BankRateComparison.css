@@ -1,0 +1,72 @@
+
+.col-sno {
+    width: 8%;
+}
+
+.col-bank {
+    width: 30%;
+}
+
+.col-amount {
+    width: 20%;
+}
+
+.col-tenor {
+    width: 14%;
+}
+.bg-kp-green {
+    background-color: #006400 !important; /* Dark Green */
+    color: #ffffff !important;
+}
+
+.bg-kp-orange {
+    background-color: #e07a5f !important; /* Muted Orange/Coral */
+    color: #ffffff !important;
+}
+
+.bg-kp-blue {
+    background-color: #2b6cb0 !important; /* Steel Blue */
+    color: #ffffff !important;
+}
+
+.bg-kp-light-green {
+    background-color: #e8f5e9 !important; /* Very Light Green for summary */
+}
+
+.bg-kp-light-blue {
+    background-color: #e3f2fd !important; /* Very Light Blue for summary */
+}
+
+.bg-row-light {
+    background-color: #f4f7f6; /* Subtle zebra tint */
+}
+
+/* Table formatting adjustments */
+.table-custom {
+    border: 1px solid #dee2e6;
+}
+
+    .table-custom th, .table-custom td {
+        text-align: center;
+        vertical-align: middle;
+        border: 1px solid #ced4da !important;
+    }
+
+    .table-custom thead th {
+        font-weight: 600;
+    }
+
+.main-header {
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.sub-header {
+    font-style: italic;
+    font-size: 1.05rem;
+}
+
+.table-responsive .table thead .bg-kp-green {
+    color: white !important;
+}
