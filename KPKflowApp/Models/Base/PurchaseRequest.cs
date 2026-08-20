@@ -7,7 +7,10 @@ namespace KPKflowApp.Models.Base
         [Required] public string? workflow { get; set; }
         public int? userid { get; set; }
         public int? instanceid { get; set; }
-        [Required] public DateTime? requestDate { get; set; }
+        [Required] 
+        public DateTime? requestDate { get; set; }
+        [Required]
+        public float targetAmount { get; set; }
         public string? justification { get; set; }
         public List<PurchaseItem> items { get; set; } = new List<PurchaseItem>();
     }

@@ -1,0 +1,3687 @@
+[
+  {
+    "ContainingType": "KPKflowApi.Controllers.BudgetController",
+    "Method": "SystemActivityLog",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ActivityID",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "ActivityDetails",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.BudgetController",
+    "Method": "SaveInitiateRequest",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "budget",
+        "Type": "KPKflowApi.Models.Budget.Budget",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.BudgetController",
+    "Method": "GetBudgetDetailByInstanceId",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "instanceid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.PurchaseRequestController",
+    "Method": "SystemActivityLog",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "activityId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "activityDetails",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.PurchaseRequestController",
+    "Method": "GetPurchaseRequestItems",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.PurchaseRequestController",
+    "Method": "GetVendorsbyCategories",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "obj",
+        "Type": "KPKflowApi.Models.PurchaseRequest.CategoryByInstance",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.PurchaseRequestController",
+    "Method": "SavePurchaseInitiateRequest",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "purchaseRequest",
+        "Type": "KPKflowApi.Models.PurchaseRequest.PurchaseRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.PurchaseRequestController",
+    "Method": "GetPurchaseRequestDetailByInstanceId",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "instanceid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.PurchaseRequestController",
+    "Method": "SubmitRFQIssuancetoVendorsRequest",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "KPKflowApi.Models.PurchaseRequest.RFQIssuanceRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.PurchaseRequestController",
+    "Method": "AutoProcurement",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.PurchaseRequestController",
+    "Method": "GetRFQsTasks",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "wfcode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "roleid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "userid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.PurchaseRequestController",
+    "Method": "SubmitRFQsRequestbkp",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "KPKflowApi.Models.PurchaseRequest.RFQsRequestbkp",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.PurchaseRequestController",
+    "Method": "SubmitRFQsRequest",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "KPKflowApi.Models.PurchaseRequest.RFQsRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.PurchaseRequestController",
+    "Method": "SubmitVendorSelection",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "KPKflowApi.Models.PurchaseRequest.VendorSelectionRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.PurchaseRequestController",
+    "Method": "UploadPurchaseOrder",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "KPKflowApi.Models.PurchaseRequest.UploadPO",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.PurchaseRequestController",
+    "Method": "SaveGateEntryRecordPurchaseRequest",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "GateEntryRecord",
+        "Type": "KPKflowApi.Models.PurchaseRequest.GateEntryRecord",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.PurchaseRequestController",
+    "Method": "SaveQAQCDetails",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "KPKflowApi.Models.PurchaseRequest.QAQCRequestModel",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.PurchaseRequestController",
+    "Method": "SaveGRNRecordPurchaseRequest",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "GRNRecord",
+        "Type": "KPKflowApi.Models.PurchaseRequest.GRNRecord",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.PurchaseRequestController",
+    "Method": "SavePaymentDetailsPurchaseRequest",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "KPKflowApi.Models.PurchaseRequest.PaymentRequestModel",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.PurchaseRequestController",
+    "Method": "GetFundName",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.PurchaseRequestController",
+    "Method": "GetBankRateByInstanceId",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "instanceid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.PurchaseRequestController",
+    "Method": "Matchthehighestbidder",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vendorid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "bankname",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "bankemail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "instanceId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "requestBy",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "rate",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SessionsController",
+    "Method": "GetErrorInfo",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SessionsController",
+    "Method": "FillPasswordPolicy",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SessionsController",
+    "Method": "InsertUserSession",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "session_",
+        "Type": "KPKflowApi.Models.Sessions.UserSession",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SessionsController",
+    "Method": "CheckLoginCreds",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "logincreds_",
+        "Type": "KPKflowApi.Models.Sessions.LoginCreds",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SessionsController",
+    "Method": "GetUserInfo",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "logincreds_",
+        "Type": "KPKflowApi.Models.Sessions.LoginCreds",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SessionsController",
+    "Method": "GetUserInfoAD",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "logincreds_",
+        "Type": "KPKflowApi.Models.Sessions.LoginCreds",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SessionsController",
+    "Method": "GetUserRole",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "logincreds_",
+        "Type": "KPKflowApi.Models.Sessions.LoginCreds",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SessionsController",
+    "Method": "ResetUserAttemptCount",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "logincreds_",
+        "Type": "KPKflowApi.Models.Sessions.LoginCreds",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SessionsController",
+    "Method": "UpdateUserAttemptCount",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "logincreds_",
+        "Type": "KPKflowApi.Models.Sessions.LoginCreds",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SessionsController",
+    "Method": "ChangePassword_Login",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "logincreds_",
+        "Type": "KPKflowApi.Models.Sessions.LoginCreds",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SessionsController",
+    "Method": "CheckOldPassword",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "logincreds_",
+        "Type": "KPKflowApi.Models.Sessions.LoginCreds",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SessionsController",
+    "Method": "CheckUserPassword",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "logincreds_",
+        "Type": "KPKflowApi.Models.Sessions.LoginCreds",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SessionsController",
+    "Method": "GetUserHashPassword",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "logincreds_",
+        "Type": "KPKflowApi.Models.Sessions.LoginCreds",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SessionsController",
+    "Method": "GetUserEmailVerification",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emailVerification_",
+        "Type": "KPKflowApi.Models.Sessions.EmailVerification",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SessionsController",
+    "Method": "ResetUserPassword",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emailVerification_",
+        "Type": "KPKflowApi.Models.Sessions.EmailVerification",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SessionsController",
+    "Method": "GetSMTPSettings",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SessionsController",
+    "Method": "GetNavigationSettings",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "logincreds_",
+        "Type": "KPKflowApi.Models.Sessions.LoginCreds",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SessionsController",
+    "Method": "SystemActivityLog",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "activityLog_",
+        "Type": "KPKflowApi.Models.Sessions.ActivityLog",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SessionsController",
+    "Method": "FillLAllowedFilesExt",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SettingsController",
+    "Method": "SystemActivityLog",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ActivityID",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "ActivityDetails",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SettingsController",
+    "Method": "GetRoles",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SettingsController",
+    "Method": "GetRolesByID",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "RoleID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SettingsController",
+    "Method": "EditRoles",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "role",
+        "Type": "KPKflowApi.Models.Settings.Role",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SettingsController",
+    "Method": "SaveRoles",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "role",
+        "Type": "KPKflowApi.Models.Settings.Role",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SettingsController",
+    "Method": "DeleteRoles",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "deleteFromDB_",
+        "Type": "KPKflowApi.Models.Settings.DeleteFromDB",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SettingsController",
+    "Method": "GetUserType",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TypeID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SettingsController",
+    "Method": "GetUsersByType",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TypeID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SettingsController",
+    "Method": "GetForms",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SettingsController",
+    "Method": "EditUsers",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "KPKflowApi.Models.Settings.User",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SettingsController",
+    "Method": "SaveUsers",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "KPKflowApi.Models.Settings.User",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SettingsController",
+    "Method": "DeleteUsers",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "deleteFromDB_",
+        "Type": "KPKflowApi.Models.Settings.DeleteFromDB",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SettingsController",
+    "Method": "GetMapping",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "RoleId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SettingsController",
+    "Method": "GetMapping_2",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "RoleId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SettingsController",
+    "Method": "UpdateRolesMapping",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mapping",
+        "Type": "KPKflowApi.Models.Settings.RoleMapping",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SettingsController",
+    "Method": "GetAllowedApiByRole",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "RoleID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SettingsController",
+    "Method": "FetchAdUsers",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SettingsController",
+    "Method": "SmtpSettingUpdate",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "smtpSetting",
+        "Type": "KPKflowApi.Models.Authentication.SMTPSettings",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SettingsController",
+    "Method": "SmtpSettingGet",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SettingsController",
+    "Method": "UpdateProfile",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserProfile",
+        "Type": "KPKflowApi.Models.Settings.UserProfile",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SettingsController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SettingsController",
+    "Method": "SaveOrganizationChart",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chart",
+        "Type": "KPKflowApi.Models.Settings.OrganizationChart",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SettingsController",
+    "Method": "GetOrganizationChart",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SettingsController",
+    "Method": "GetEmployeeListByManagerID",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "managerid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SettingsController",
+    "Method": "SendInvitationToVendors",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "KPKflowApi.Models.Settings.InviteVendors",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SettingsController",
+    "Method": "GetVendors",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.SettingsController",
+    "Method": "UpdateVendorRegistrationStatus",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "KPKflowApi.Models.Settings.VendorStatusUpdateDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "SystemActivityLog",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ActivityID",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "ActivityDetails",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "GetLoggedInID",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "GetWorkflow",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "GetWorkflowByID",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "workflowid",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "EditWorkflow",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "workflow",
+        "Type": "KPKflowApi.Models.Workflow.Workflow",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "SaveWorkflow",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "workflow",
+        "Type": "KPKflowApi.Models.Workflow.Workflow",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "DeleteWorkflow",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "step",
+        "Type": "KPKflowApi.Models.Workflow.Step",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "GetApprovalType",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "SaveWorkflowStep",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "step",
+        "Type": "KPKflowApi.Models.Workflow.Step",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "UpdateWorkflowStep",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "step",
+        "Type": "KPKflowApi.Models.Workflow.Step",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "DeleteWorkflowStep",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "step",
+        "Type": "KPKflowApi.Models.Workflow.Step",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "GetWorkflowStep",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "GetWorkflowStepsByID",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "workflowstepid",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "GetSectionPermission",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "workflowid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "stepid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "PerformVisibleTask",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "section",
+        "Type": "KPKflowApi.Models.Workflow.SectionPermission",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "PerformEnableTask",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "section",
+        "Type": "KPKflowApi.Models.Workflow.SectionPermission",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "SaveWorkflowStepAction",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "action",
+        "Type": "KPKflowApi.Models.Workflow.Action",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "UpdateWorkflowStepAction",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "action",
+        "Type": "KPKflowApi.Models.Workflow.Action",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "GetDynamicFunction",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "GetWorkflowStepbyWorkflowId",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "workflowid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "DeleteWorkflowStepAction",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "action",
+        "Type": "KPKflowApi.Models.Workflow.Action",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "GetWorkflowStepAction",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "GetWorkflowStepsActionByID",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "workflowstepid",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "GetWorkflowCode",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "GetFormsByInstanceId",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "wfcode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "instanceid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "formName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "GetCurrentWorkflowAction",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "wfcode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "instanceid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "GetWorkflowLog",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "instanceid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "MoveWorkflow",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "step",
+        "Type": "KPKflowApi.Models.Workflow.WorkflowMove",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "GenerateEmailsAndSend",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "instanceid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[KPKflowApi.Models.Workflow.EmailClass, KPKflowApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "MyRequest",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "wfcode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "roleid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "userid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "MyTask",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "wfcode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "roleid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "userid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "AllRequests",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "wfcode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "roleid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "userid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "MyApproval",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "wfcode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "roleid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "userid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "GetDailyTasks",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "roleid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "GetDailyOverdueTasks",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "roleid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "GetDailyMyRequests",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "GetDailyOverdueMyRequests",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "GetDailyMyApprovals",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "SaveSelfAssignUser",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "step",
+        "Type": "KPKflowApp.Models.Base.SelfAssign",
+        "IsRequired": true
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "GetSelfAssignUser",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "instanceid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "DeleteSelfAssignUser",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "primaryid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "instanceid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WorkflowController",
+    "Method": "IsTaskAllowed",
+    "RelativePath": "api/{controller}/{action}/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "instanceid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "roleid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "userid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "controller",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "action",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.AuthenticationController",
+    "Method": "token",
+    "RelativePath": "api/Authentication/token",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usersdata",
+        "Type": "KPKflowApi.Models.Authentication.UserDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VendorRegisterController",
+    "Method": "FinalRegister",
+    "RelativePath": "api/VendorRegister/FinalRegister",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "KPKflowApi.Models.Settings.FinalVerificationModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VendorRegisterController",
+    "Method": "GetCategories",
+    "RelativePath": "api/VendorRegister/GetCategories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VendorRegisterController",
+    "Method": "GetSubCategories",
+    "RelativePath": "api/VendorRegister/GetSubCategories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CategoryId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VendorRegisterController",
+    "Method": "InitiateRegistration",
+    "RelativePath": "api/VendorRegister/InitiateRegistration",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "KPKflowApi.Models.Settings.VendorRegistrationModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VendorRegisterController",
+    "Method": "ResendOTP",
+    "RelativePath": "api/VendorRegister/ResendOTP",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "System.Object",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VendorRegisterController",
+    "Method": "ValidateVendorToken",
+    "RelativePath": "api/VendorRegister/ValidateVendorToken",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KPKflowApi.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[KPKflowApi.WeatherForecast, KPKflowApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

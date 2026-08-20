@@ -1,5 +1,6 @@
 ﻿using AngleSharp.Dom;
 using System.Runtime.ConstrainedExecution;
+using static System.Net.WebRequestMethods;
 
 namespace KPKflowApi.Utility
 {
@@ -442,5 +443,75 @@ namespace KPKflowApi.Utility
 
             return BaseContainer(body);
         }
+        public static string EmailBodyMatchthehighestbidder(int vendorid, string bankname, string bankemail, int instanceId, string[] rate)
+        {
+            var url = Environment.GetEnvironmentVariable("AM_TARGET_APP");
+            var fullurl = $"{url}/PurchaseRequest/Initiate?instanceid={instanceId}";
+            string tableRowsHtml = "";
+
+            if (rate != null && rate.Length > 0)
+            {
+                foreach (var item in rate)
+                {
+                    if (string.IsNullOrEmpty(item)) continue;
+
+                    var parts = item.Split(':');
+                    string tenor = parts[0].Trim();
+                    string rateValue = parts.Length > 1 ? parts[1].Trim() : "-";
+
+                    tableRowsHtml += $@"
+                    <tr style=""border-bottom: 1px solid #e2e8f0;"">
+                        <td style=""padding: 10px 15px; font-weight: bold; color: #1e293b; text-align: left;"">{tenor}</td>
+                        <td style=""padding: 10px 15px; color: #0f172a; text-align: right; font-weight: bold;"">{rateValue}</td>
+                    </tr>";
+                }
+            }
+            else
+            {
+                tableRowsHtml = @"
+                <tr>
+                    <td colspan=""2"" style=""padding: 15px; text-align: center; color: #64748b;"">No rates available</td>
+                </tr>";
+            }
+
+            string body = $@"
+                {GetHeader("Opportunity to Match Highest Bid Rates", "#1e293b")} 
+                <div style=""padding: 20px; font-family: Arial, sans-serif; line-height: 1.6; color: #334155;"">
+                    <p>Dear Team {bankname},</p>
+    
+                    <p>We have completed the comparative evaluation of the bank rates submitted for our recent financial placement.</p>
+    
+                    <p>The highest competitive rates received for the respective tenors are as follows:</p>
+        
+                    <!-- ==================== PROFESSIONAL RATES TABLE ==================== -->
+                    <div style=""margin: 20px 0; max-width: 350px;"">
+                       <table width=""320"" style=""width: 320px; border-collapse: collapse; font-family: Arial, sans-serif; margin: 5px 0 15px 0; border: 1px solid #cbd5e1; border-radius: 4px;"">
+                            <thead>
+                                <tr style=""background-color: #f1f5f9; border-bottom: 2px solid #cbd5e1;"">
+                                    <th style=""padding: 8px 12px; text-align: left; color: #475569; font-weight: bold; font-size: 13px;"">Tenor</th>
+                                    <th style=""padding: 8px 12px; text-align: right; color: #475569; font-weight: bold; font-size: 13px;"">Highest Offered Rate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {tableRowsHtml}
+                            </tbody>
+                        </table>
+                    </div>
+    
+                    <p>To secure this placement, you are requested to match the highest bid rates mentioned above. 
+                    If you agree to match these rates and proceed with the transaction, please confirm your acceptance by clicking the secure link below:</p>
+    
+                    <p style=""margin: 25px 0;"">
+                        <a href=""{fullurl}"" style=""background-color: #eab308; color: #1e293b; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"">
+                            Click here to Match Rates
+                        </a>
+                    </p>
+                    <p>Your prompt response will be highly appreciated.</p>
+                </div>
+                {GetFooter("This is a formal automated notification from the Bid Department.")}";
+
+            return BaseContainer(body);
+        }
+
     }
 }

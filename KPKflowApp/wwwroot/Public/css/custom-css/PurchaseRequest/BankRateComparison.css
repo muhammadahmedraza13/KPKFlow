@@ -70,3 +70,10 @@
 .table-responsive .table thead .bg-kp-green {
     color: white !important;
 }
+.match-bidder-text {
+    color: black !important;
+    font-size: 0.75rem;
+    font-weight: normal;
+    display: block; /* Bank ke naam ke niche show karne ke liye */
+    margin-top: 2px;
+}

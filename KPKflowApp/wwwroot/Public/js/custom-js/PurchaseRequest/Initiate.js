@@ -106,12 +106,13 @@ $(document).ready(function () {
         `;
         $("#investmentTableBody").append(newRow);
     });
+    
 });
 $(document).on("click", ".removeRowBtn", function () {
     $(this).closest("tr").remove();
 });
-$(document).on("change", ".inputnum", function () {
-    $(this).val(formatDecimal($(this).val()));
+$(document).on('input', 'input.number', function () {
+    formatNumberInput($(this));
 });
 async function LoadViewMyRequest(instanceid) {
     await GetFormsByInstanceId($('#workflow').val(), instanceid, "appendForm", "intiate");
@@ -349,7 +350,7 @@ function GetPurchaseRequestDetailByInstanceId(instanceid) {
             const QAQC = result.data?.QAQC || [];
             const GRNRecord = result.data?.GRNRecord || [];
             const PaymentRecord = result.data?.PaymentRecord || [];
-
+            const isVendor = UserDetails.data.RoleID === 1017;
             // --- Helper functions for consistency ---
             const getFileIcon = (fileName) => {
                 if (!fileName) return 'bx-file text-secondary';
@@ -386,6 +387,7 @@ function GetPurchaseRequestDetailByInstanceId(instanceid) {
                 $('#addItemRow, .policy-banner').closest('.row').addClass('d-none');
 
                 lockAndTrigger($s.find('#justification'), master.justification);
+                lockAndTrigger($s.find('#targetAmount'), master.targetAmount);
                 if (master.requestDate) lockAndTrigger($s.find('#requestDate'), master.requestDate.split('T')[0]);
 
                 const labels = $s.find('.item-row:first label').map((i, el) => $(el).text()).get();
@@ -483,14 +485,25 @@ function GetPurchaseRequestDetailByInstanceId(instanceid) {
             // --- Section 4: Vendor Evaluation Section ---
             if (vendorQuotes?.length > 0) {
 
+                
                 const $s = $('#VendorEvaluationSection'),
                     $tableBody = $('#vendorTableBody').empty();
+                    let $investmentTableBody = $('#investmentTableBody');
 
+                // Filter me check karein ke SubmittedVendorId match ho, TenorDetails null/undefined na ho, 
+                // aur usme waqai 'Tenorname' ka word mojood ho (yani actual data ho)
+                const validQuotes = vendorQuotes ? vendorQuotes.filter(x =>
+                    x.SubmittedVendorId == UserDetails.data.UserID &&
+                    x.TenorDetails &&
+                    x.TenorDetails.trim() !== "" &&
+                    x.TenorDetails.toLowerCase().includes("tenorname")
+                ) : [];
+
+               
                 // =========================
                 // GROUP BY VENDOR
                 // =========================
                 const groupedVendors = {};
-
                 vendorQuotes.forEach(q => {
 
                     if (!groupedVendors[q.VendorID]) {
@@ -560,7 +573,59 @@ function GetPurchaseRequestDetailByInstanceId(instanceid) {
                 const displayList = isAwarded
                     ? [awarded]
                     : vendors;
+                if (validQuotes.length > 0) {
 
+                    $investmentTableBody.empty();
+                    if (isVendor) {
+                            $("#intiateform").find('#actionId').empty();
+                            $("#intiateform").find('#actionId').append(
+                                '<button class="mt-2 btn btn-primary btn-sm savebutton me-2 mb-2" type="button" data-assignmenttype="static" data-dynamicfunction="undefind" data-save="true" data-move="false" data-id="56">' +
+                                '<i class="feather-save me-2"></i> Submit Bids' +
+                                '</button>'
+                            );
+                        
+                    }
+                    validQuotes.forEach((quote, index) => {
+                        const tenorMap = { '3m': '', '6m': '', '12m': '' };
+
+                        quote.TenorDetails.split('|').forEach(t => {
+                            const tenorMatch = t.match(/Tenorname\s*:\s*([^,]+)/i);
+                            const valueMatch = t.match(/Value\s*:\s*(.*)/i);
+
+                            if (tenorMatch && valueMatch) {
+                                const tenorName = tenorMatch[1].trim().toLowerCase();
+                                const value = valueMatch[1].trim();
+
+                                if (tenorName.includes('3m') || tenorName.includes('3')) {
+                                    tenorMap['3m'] = value;
+                                } else if (tenorName.includes('6m') || tenorName.includes('6')) {
+                                    tenorMap['6m'] = value;
+                                } else if (tenorName.includes('1y') || tenorName.includes('12')) {
+                                    tenorMap['12m'] = value;
+                                }
+                            }
+                        });
+
+                        const investmentRow = `
+                            <tr>
+                                <td>
+                                    <input type="text" class="form-control number" value="${quote.VendorQuotedPrice || ''}" >
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control inputnum" value="${tenorMap['3m'] || '-'}" >
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control inputnum" value="${tenorMap['6m'] || '-'}" >
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control inputnum" value="${tenorMap['12m'] || '-'}" >
+                                </td>
+                                <td class="text-center"></td>
+                            </tr>
+                        `;
+                        $investmentTableBody.append(investmentRow);
+                    });
+                }
                 // =========================
                 // CREATE TENOR TABLE
                 // =========================
@@ -977,7 +1042,7 @@ function GetPurchaseRequestDetailByInstanceId(instanceid) {
             }
 
 
-            const isVendor = UserDetails.data.RoleID === 1017;
+ 
             $('#VendorEvaluationSection, #purchaseOrderSection, #gateEntrySection, #grnConfirmationSection, #historySection')
                 .toggle(!isVendor);
 
@@ -1177,7 +1242,7 @@ function mynextsetp(btn) {
                 }).then((result) => {
                     if (result.isConfirmed) {
                         $('#requestDate').prop('disabled', false);
-
+                        formrewrite('intiateform');
                         var formElement = $('#intiateform')[0];
                         var Data = new FormData(formElement);
                         $('.item-row').each(function (index, element) {
@@ -1232,6 +1297,8 @@ function mynextsetp(btn) {
                                 });
                             }
                         });
+
+                        backtoorignalform('intiateform');
                     }
                 });
             }
@@ -1431,7 +1498,7 @@ function SaveInitiatorDocument() {
 
                     const fileInput = document.getElementById("fileRFQDoc");
 
-                    if (fileInput.files.length > 0) {
+                    if (fileInput != null && fileInput.files.length > 0) {
                         formData.append("file", fileInput.files[0]);
                     }
 
@@ -1505,13 +1572,6 @@ function SaveInitiatorDocument() {
         }
     }
 }
-function formatDecimal(value) {
-    if (!value) return "0.00";
-    value = value.toString().replace(/%/g, "").trim();
-    let num = parseFloat(value);
-    if (isNaN(num)) return "0.00";
-    return num.toFixed(2);
-}
 
 function MoveMyRequest(actionId, dynamicfunction, assignmenttype, buttonText) {
 
@@ -1563,7 +1623,7 @@ function MoveMyRequest(actionId, dynamicfunction, assignmenttype, buttonText) {
 const TIMER_DURATION = 60 * 1000;
 const STORAGE_KEY = "timerEndTime";
 
-let timerInterval = null; // 👈 important fix
+let timerInterval = null;
 
 function startOrResumeTimer() {
     $('#timerdiv').removeClass('d-none');

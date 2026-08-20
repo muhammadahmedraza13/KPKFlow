@@ -151,6 +151,7 @@ namespace KPKflowApi.Controllers
                     { "instanceid-INT", (purchaseRequest.instanceid ?? 0).ToString() },
                     { "createdby-INT", (purchaseRequest.userid ?? 0).ToString() },
                     { "requestDate-DATE", purchaseRequest.requestDate?.ToString("yyyy-MM-dd") },
+                    { "targetAmount-FLOAT", (purchaseRequest.targetAmount ?? 0f).ToString() },
                     { "justification-VARCHAR", HttpUtility.HtmlEncode(purchaseRequest.justification ?? "") }
                 };
 
@@ -742,6 +743,34 @@ namespace KPKflowApi.Controllers
                 {
                     SystemActivityLog(ActivityLog.ActivityID_Get, ActivityLog.ActivityDetails_Get2 + "sp_select_banratecomparison");
                 }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("{0} {1} {2}", "FormsController", MethodBase.GetCurrentMethod().Name, ex.Message);
+                SystemActivityLog(ActivityLog.ActivityID_Error, MethodBase.GetCurrentMethod().Name + " " + ex.Message);
+                return BadRequest("Something Went Wrong Please Contact Your Sysmtem Adminsitrator");
+            }
+            return Ok(dt);
+        }
+       
+        [RateLimitMiddleware(100, 5)]
+        [HttpGet]
+        public IActionResult Matchthehighestbidder(int vendorid, string bankname, string bankemail,int instanceId, int requestBy ,string rate)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                NameValueCollection? nv = new NameValueCollection();
+                nv.Clear();
+                nv.Add("vendorid-INT", vendorid.ToString());
+                nv.Add("instanceid-INT", instanceId.ToString());
+                nv.Add("@isUpdated-INT", "0");
+                nv.Add("@requestBy-INT", requestBy.ToString());
+                var res = _DAL.InsertData("sp_insert_Matchthehighestbidder", nv, _DAL.CSManagementPortalDatabase);
+                string[] ratesArray = !string.IsNullOrEmpty(rate) ? rate.Split(',') : new string[0];
+                string emailBody = ActivityLog.EmailBodyMatchthehighestbidder(vendorid, bankname, bankemail, instanceId, ratesArray);
+                _sendemail.SendEmailToVendors(new List<string> { bankemail }, emailBody, $"Opportunity to Match Highest Bid Rates - Comparative Analysis, Instance No:  {instanceId}", _DAL);
+               
             }
             catch (Exception ex)
             {

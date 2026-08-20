@@ -132,3 +132,52 @@ function HideLoader(divid) {
 function removeToast(id) {
     $('.c_toast_' + id).remove();
 }
+function formrewrite(formid) {
+    $('#' + formid + ' input.number').each(function () {
+        let currentVal = $(this).val();
+        $(this).val(numbernonperforated(currentVal));
+    });
+}
+function backtoorignalform(formid) {
+    $('#' + formid + ' input.number').each(function () {
+        let currentVal = $(this).val();
+        $(this).val(numberperforated(currentVal));
+    });
+}
+function formatNumber(num) {
+    if (num == null || isNaN(num)) return '';
+    return parseFloat(num).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+function formatNumberInput(elem) {
+    var value = elem.val();
+    var num = value;
+    if (!num) return '';
+    elem.val(numberperforated(value));
+    elem.attr('data-value', numbernonperforated(value));
+}
+function formatDecimal(value) {
+    if (!value) return "0.00";
+    value = value.toString().replace(/%/g, "").trim();
+    let num = parseFloat(value);
+    if (isNaN(num)) return "0.00";
+    return num.toFixed(2);
+}
+
+function numberperforated(num) {
+    if (!num) return '';
+    num = num.replace(/,/g, '');
+    num = num.replace(/[^0-9.]/g, '');
+    let p = num.split('.');
+    if (p.length > 2) {
+        num = p[0] + '.' + p.slice(1).join('');
+        p = num.split('.');
+    }
+    if (p[1]) p[1] = p[1].slice(0, 5);
+    p[0] = p[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return p.join('.')
+}
+function numbernonperforated(num) {
+    if (!num) return '';
+    num = num.replace(/,/g, '');
+    return num;
+}

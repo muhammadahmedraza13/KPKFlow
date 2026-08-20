@@ -43,11 +43,19 @@ namespace KPKflowApp.Utility
                             FormName += "?wfcode=" + wfcode;
                         }
                         List<RolesMapping> permissionList = sessionItems.rolesMapping;
-                        KickUser = permissionList.Any(item => item.FormName == FormName);
+                        if (permissionList == null)
+                        {
+                            KickUser = false;
 
-                        ConfiremdLogout = false;
+                        }
+                        else
+                        {
+                            KickUser = permissionList.Any(item => item.FormName == FormName);
 
-                        _sessions.UpdateSession(UniqueKey, UserID, sessionItems.authToken);
+                            ConfiremdLogout = false;
+
+                            _sessions.UpdateSession(UniqueKey, UserID, sessionItems.authToken);
+                        }
                     }
                 }
             }

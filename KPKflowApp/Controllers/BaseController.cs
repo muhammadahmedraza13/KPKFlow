@@ -10,6 +10,7 @@ using KPKflowApp.Models.FileUpload;
 using System.Reflection;
 using KPKflowApi.Models.Workflow;
 using KPKflowApp.Middleware;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace KPKflowApp.Controllers
 {
@@ -1221,7 +1222,26 @@ namespace KPKflowApp.Controllers
             return new HttpResponseMessageResult(response);
         }
         #endregion
+        #region RFQ Email
+        [HttpGet]
+        public IActionResult Matchthehighestbidder(int vendorid, string bankname, string bankemail, int instanceId, string[] rate)
+        {
+            // Array ko dynamic query string ke bajaye ek hi comma-separated string bana kar pass karenge
+            UserInfo userinfo = _requestClient.GetUserInformation();
+            int? userid = userinfo.UserID;
+            var ratesJoined = rate != null ? string.Join(",", rate) : "";
 
+            var queryParams = $"?vendorid={vendorid}&bankname={Uri.EscapeDataString(bankname)}&bankemail={Uri.EscapeDataString(bankemail)}&instanceId={instanceId}&requestBy={userid}&rate={Uri.EscapeDataString(ratesJoined)}";
+
+            HttpResponseMessage response = _requestClient.UseHttpClientGet(
+                queryParams,
+                "Matchthehighestbidder",
+                "PurchaseRequest"
+            );
+
+            return new HttpResponseMessageResult(response);
+        }
+        #endregion
     }
 
 }

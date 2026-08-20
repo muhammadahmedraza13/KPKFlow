@@ -38,12 +38,19 @@
             </div>
             <div class="card-body">
                 <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-10">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-label">Date</label>
-                                <input type="text" name="date" class="form-control" value="" id="date" disabled/>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Date</label>
+                                    <input type="text" name="date" class="form-control" value="" id="date" disabled/>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Target Amount (In Billion)</label>
+                                    <input type="text" name="targetAmount" class="form-control" value="" id="targetAmount" disabled />
+                                </div>
                             </div>
                         </div>
                         <hr />
@@ -63,7 +70,7 @@
                                     <tr class="bg-kp-green align-middle">
                                         <th rowspan="2" class="col-sno">S.No.</th>
                                         <th rowspan="2" class="col-bank">Bank Name</th>
-                                        <th rowspan="2" class="col-amount">Offered Amount<br>(PKR in millions)</th>
+                                        <th rowspan="2" class="col-amount">Offered Amount<br>(PKR in Billions)</th>
                                         <th colspan="3">Rate (% p.a.)</th>
                                     </tr>
                                     <tr class="bg-kp-green align-middle">
@@ -77,27 +84,32 @@
                                 </tbody>
                                 <tfoot>
                                     <tr>
-                                        <td colspan="3" class="bg-kp-orange text-uppercase fw-bold text-center py-2">
-                                            BEST OFFERED RATE (Lowest)
+                                        <td id="best-rate-label" colspan="3" class=" bg-kp-blue text-uppercase fw-bold footer-title-cell text-white">
+                                            LOWEST OFFERED RATE
                                         </td>
-                                        <td class="bg-kp-light-green fw-bold" id="best-3m">0.00%</td>
-                                        <td class="bg-kp-light-green fw-bold" id="best-6m">0.00%</td>
-                                        <td class="bg-kp-light-green fw-bold" id="best-12m">0.00%</td>
+                                        <td class="bg-kp-light-blue fw-bold" id="best-3m">0.00%</td>
+                                        <td class="bg-kp-light-blue fw-bold" id="best-6m">0.00%</td>
+                                        <td class="bg-kp-light-blue fw-bold" id="best-12m">0.00%</td>
                                     </tr>
 
                                     <tr>
-                                        <td colspan="3" class="bg-kp-blue text-uppercase fw-bold text-center py-2">
-                                            HIGHEST OFFERED RATE
+                                        <td colspan="3" class="bg-kp-orange text-uppercase fw-bold text-center py-2">
+                                             BEST OFFERED RATE 
                                         </td>
-                                        <td class="bg-kp-light-blue fw-bold" id="highest-3m">0.00%</td>
-                                        <td class="bg-kp-light-blue fw-bold" id="highest-6m">0.00%</td>
-                                        <td class="bg-kp-light-blue fw-bold" id="highest-12m">0.00%</td>
+                                        <td class="bg-kp-light-green fw-bold" id="highest-3m">0.00%</td>
+                                        <td class="bg-kp-light-green fw-bold" id="highest-6m">0.00%</td>
+                                        <td class="bg-kp-light-green fw-bold" id="highest-12m">0.00%</td>
                                     </tr>
                                 </tfoot>
+                                
                             </table>
+
                         </div>
+                        <hr />
+                        <h4>
+                            Note: Target Not Match With a Single Bank
+                        </h4>
                     </div>
-                    <div class="col-md-1"></div>
                 </div>
             </div>
         </div>
